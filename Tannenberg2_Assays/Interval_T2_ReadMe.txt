@@ -15,6 +15,8 @@ CRS      : NONE — this worksheet contains no coordinate columns
 Country  : Germany (central Hesse — Tannenberg 2 area)
 Features : 100 composited assay intervals (drillhole Ro23 and related holes)
 Output   : Interval_T2_BHP.csv
+Columns  : 394 (COMPLETE BHP Drilling-Assays schema, all fields present in
+           schema order; fields with no source data are written empty)
 
 NOTE ON COORDINATES
 --------------------
@@ -78,11 +80,20 @@ ASSAY POPULATION SUMMARY
   Co_ppm      66/100        66%
   Fe_pct      55/100        55%
 
-FIELDS LEFT EMPTY (not present in source)
--------------------------------------------
-  PNTPROSPC, WGS84 coords, CoordSurv, SF_Observe, SurvInstr, SampleDate,
+COMPLETE SCHEMA OUTPUT
+----------------------
+The CSV contains ALL 394 Drilling-Assays schema fields, written in schema
+order, so the file is a full/complete schema instance. Source data is mapped
+into the matching fields (see above); every remaining field is present as a
+column header with an empty value.
+
+FIELDS PRESENT BUT LEFT EMPTY (no source data)
+-----------------------------------------------
+  PNTPROSPC, WGS84_CALX/Y/Z, CoordSurv, SF_Observe, SurvInstr, SampleDate,
   SAMPLEDBY, all lithology / alteration / mineralogy fields, all lab dispatch
-  fields, all _GMD / _LDD / _UDD detection-limit fields.
+  fields, all non-source element results, all _GMD / _LDD / _UDD detection-limit
+  and generic-method fields, and all major-oxide fields (SiO2_p ... TOTAL_p).
+  These are retained as empty columns for schema completeness.
 
 POPULATION STATISTICS
 ----------------------

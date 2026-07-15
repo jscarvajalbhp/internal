@@ -15,6 +15,8 @@ CRS      : DHDN / Gauss-Krüger Zone 4 (EPSG:31468) — mid_x/mid_y coordinates
 Country  : Germany (central Hesse — Tannenberg 2 area)
 Features : 833 assay intervals
 Output   : Assays_HNLUG_T2_BHP.csv
+Columns  : 394 (COMPLETE BHP Drilling-Assays schema, all fields present in
+           schema order; fields with no source data are written empty)
 
 COORDINATE SYSTEM
 ------------------
@@ -82,11 +84,22 @@ ASSAY POPULATION SUMMARY
   Co_ppm      158/833        19%
   Fe_pct      117/833        14%
 
-FIELDS LEFT EMPTY (not present in source)
--------------------------------------------
+COMPLETE SCHEMA OUTPUT
+----------------------
+The CSV contains ALL 394 Drilling-Assays schema fields, written in schema
+order, so the file is a full/complete schema instance. Source data is mapped
+into the matching fields (see above); every remaining field is present as a
+column header with an empty value.
+
+FIELDS PRESENT BUT LEFT EMPTY (no source data)
+-----------------------------------------------
   PNTPROSPC, SF_Observe, SurvInstr, SampleDate, SAMPLEDBY,
-  all lithology / alteration / mineralogy fields,
-  all lab dispatch fields, all _GMD / _LDD / _UDD detection-limit fields.
+  all lithology / alteration / mineralogy fields (Lith1/2, LT_Color*, Alt*, MN_*),
+  all lab dispatch fields (Lab_L_D, Dsptch_L_D, Labjobno, weights, dates),
+  all non-source element results (Al, As, Au, Ba, ... plus every _GMD / _LDD /
+  _UDD detection-limit and generic-method field), and all major-oxide fields
+  (SiO2_p ... TOTAL_p). These are retained as empty columns for schema
+  completeness.
 
 POPULATION STATISTICS
 ----------------------
