@@ -110,13 +110,31 @@ NOTE: Values of "-" in the source (not analysed) are stored as empty string in o
 --------------------------------------------------------------------------------
 BATCH SUMMARY
 --------------------------------------------------------------------------------
+  BATCH 1.1
   File          Batch ID      Received     Reported     Samples  Elements
   TR2502684     TR2502684     08-Nov-25    14-Nov-25    133      37
   TR2502685     TR2502685     08-Nov-25    14-Nov-25    136      36
   TR2502686     TR2502686     08-Nov-25    14-Nov-25    130      35
   TR2502687     TR2502687     08-Nov-25    14-Nov-25    131      35
   TR2502688     TR2502688     08-Nov-25    14-Nov-25    168      36
-  TOTAL                                                 698
+  Batch 1.1 Total                                       698
+
+  BATCH 1.2
+  File          Batch ID      Received     Reported     Samples  Elements
+  TR2503142     TR2503142     19-Dec-25    06-Feb-26    153      36
+  TR2503143     TR2503143     19-Dec-25    06-Feb-26    152      35
+  TR2503144     TR2503144     22-Dec-25    06-Feb-26    143      37
+  TR2503145     TR2503145     22-Dec-25    06-Feb-26    149      35
+  TR2503146     TR2503146     23-Dec-25    06-Feb-26    150      35
+  TR2503147     TR2503147     26-Dec-25    06-Feb-26    149      35
+  TR2503148     TR2503148     23-Dec-25    06-Feb-26    151      35
+  TR2503149     TR2503149     23-Dec-25    06-Feb-26    148      35
+  TR2503150     TR2503150     24-Dec-25    06-Feb-26    151      36
+  TR2503151     TR2503151     24-Dec-25    06-Feb-26    150      35
+  TR2503152     TR2503152     24-Dec-25    06-Feb-26    105      34
+  Batch 1.2 Total                                       1601
+
+  GRAND TOTAL (both batches)                            2299
 
 ELEMENTS ANALYSED (all files, ICP40B suite):
   Ag, Al, As, Ba, Be, Bi, Ca, Cd, Co, Cr, Cu, Fe, K, La, Li, Mg, Mn, Mo,
